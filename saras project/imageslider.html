@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="imageslide.css">
+</head>
+<body>
+<div class="slider">
+<div class="slides">
+<input type="radio" id="radio1" name="radios">
+<input type="radio" id="radio2" name="radios">
+<input type="radio" id="radio3" name="radios">
+<div class="slide first">
+<img src="D:\New folder\saras project\christmas gift.jpg" style="width:100%"style="height:550px">
+<div class="content-center">
+    <h2>Save 25%</h2>
+    <h1>Christmas Sale</h1>
+    <p>There are many variations of passages of lorem ipsum available,but the
+    majority have<br> s alteration in some form,by injected humour,or randomised
+    words which</p>
+    <a href="#"class="button">LEARN MORE</a>
+</div>
+</div>
+<div class="slide second">
+<img src="D:\New folder\saras project\new9.jpg"style="width:100%"style="height:550px">
+</div>
+<div class="slide third">
+<img src="D:\New folder\saras project\new4.jpg"style="width:100%"style="height:550px">
+</div>
+<div class="auto">
+<div class="auto1"></div>
+<div class="auto2"></div>
+<div class="auto3"></div>
+</div>
+</div>
+<div class="manual">
+<label for="radio1" class="manuals"></label>
+<label for="radio2" class="manuals"></label>
+<label for="radio3" class="manuals"></label>
+</div>
+</div>
+<script>
+var counter=1;
+setInterval(function(){
+document.getElementById("radio" + counter).checked = true;
+counter = counter + 1;
+if(counter > 3){
+counter=1;
+}
+},3000);
+</script>
+</body>
+</html>
